@@ -1,7 +1,5 @@
 package concesionario;
 
-import java.util.Objects;
-
 public abstract class Vehiculo {
 	private String marca;
 	private String modelo;
@@ -36,7 +34,7 @@ public abstract class Vehiculo {
 
 	@Override
 	public String toString() {
-	    return String.format("Vehiculo [marca=%s, modelo=%s, matricula=%s]", marca, modelo, matricula);
+		return String.format("Vehiculo [marca= %s, modelo= %s, matricula= %s]", this.marca, this.modelo, this.matricula);
 	}
 
 	@Override
@@ -48,8 +46,10 @@ public abstract class Vehiculo {
 		if (getClass() != obj.getClass())
 			return false;
 		Vehiculo other = (Vehiculo) obj;
-		return Objects.equals(marca, other.marca) && Objects.equals(matricula, other.matricula)
-				&& Objects.equals(modelo, other.modelo);
+		return this.marca.equals(other.marca) &&
+				this.modelo.equals(other.modelo) &&
+				this.matricula.equals(other.matricula)
+				;
 	}
 	
 	 public abstract void acelerar(int cantidad);

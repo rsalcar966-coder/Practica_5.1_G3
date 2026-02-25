@@ -15,11 +15,28 @@ public class Quad extends Ciclomotor{
 	public void setTamaño(double tamaño) {
 		this.tamaño = tamaño;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("Moto [marca= %s, modelo= %s, matricula= %s, cilindrada= %s, tamaño= %]", this.getMarca(), this.getModelo(), 
+				this.getMatricula(), this.getCilindrada(), this.tamaño);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Quad other = (Quad) obj;
+		return super.equals(obj) && this.tamaño == other.tamaño;
+	}
 
 	@Override
 	public void mostrarDatos() {
-		// TODO Auto-generated method stub
-		
+		System.out.println(this.toString());
 	}
 	
 

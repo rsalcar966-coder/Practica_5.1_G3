@@ -16,9 +16,29 @@ public class Moto extends Ciclomotor{
 		this.tipo = tipo;
 	}
 
+	
+	
+	@Override
+	public String toString() {
+		return String.format("Moto [marca= %s, modelo= %s, matricula= %s, cilindrada= %s, tipo= %s]", this.getMarca(), this.getModelo(), 
+				this.getMatricula(), this.getCilindrada(), this.tipo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Moto other = (Moto) obj;
+		return super.equals(obj) && this.tipo.equals(other.tipo);
+	}
+
 	@Override
 	public void mostrarDatos() {
-		// TODO Auto-generated method stub
+		System.out.println(this.toString());
 		
 	}
 	

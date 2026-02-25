@@ -23,5 +23,25 @@ public abstract class Coche extends Vehiculo {
         int velocidad = cantidad;
         System.out.println("El coche acelera a " + velocidad + " km/h");
     }
+
+	@Override
+	public String toString() {
+		return String.format("Coche [marca= %s, modelo= %s, matricula= %s, combustible= %s]", this.getMarca(), this.getModelo(), 
+				this.getMatricula(), this.combustible);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Coche other = (Coche) obj;
+		return super.equals(obj) && this.combustible.equals(other.combustible);
+	}
+	
+	
 	
 }

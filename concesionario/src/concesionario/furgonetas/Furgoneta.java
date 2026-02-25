@@ -23,5 +23,23 @@ public abstract class Furgoneta extends Vehiculo {
         int velocidad = cantidad;
         System.out.println("El coche acelera a " + velocidad + " km/h");
     }
+
+	@Override
+	public String toString() {
+		return String.format("Coche [marca= %s, modelo= %s, matricula= %s, tipo= %s]", this.getMarca(), this.getModelo(), 
+				this.getMatricula(), this.tipo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Furgoneta other = (Furgoneta) obj;
+		return super.equals(obj) && this.tipo == other.tipo;
+	}
 	
 }

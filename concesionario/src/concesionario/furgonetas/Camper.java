@@ -21,10 +21,34 @@ public class Camper extends Furgoneta {
         int velocidad = cantidad;
         System.out.println("El coche acelera a " + velocidad + " km/h");
     }
+	
+	// metodo agregado
+	public void desplegarCama() {
+		System.out.println("La cama de la camper se ha desplegado.");
+	}
+
+	
+	@Override
+	public String toString() {
+		return String.format("Coche [marca= %s, modelo= %s, matricula= %s, descripcion= %s]", this.getMarca(), this.getModelo(), 
+				this.getMatricula(), this.descripcion);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Camper other = (Camper) obj;
+		return super.equals(obj) && this.descripcion.equals(other.descripcion);
+	}
 
 	@Override
 	public void mostrarDatos() {
-		// TODO Auto-generated method stub
+		System.out.println(this.toString());
 		
 	}
 	
