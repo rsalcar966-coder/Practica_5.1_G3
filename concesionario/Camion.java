@@ -15,5 +15,7 @@ public class Camion extends Vehiculo{
 		this.capacidadCarga = capacidadCarga;
 	}
 	
-	
+	public void descargar() {
+		System.out.println("El camión está descargando la mercancía.");
+	}
 }

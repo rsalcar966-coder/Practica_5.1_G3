@@ -16,6 +16,8 @@ public class Camper extends Furgoneta {
 		this.descripcion = descripcion;
 	}
 	
-	
+	public void desplegarCama() {
+		System.out.println("La cama de la camper se ha desplegado.");
+	}
 	
 }
