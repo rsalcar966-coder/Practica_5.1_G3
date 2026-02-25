@@ -16,4 +16,7 @@ public class Ranchera extends Coche{
 		this.capacidadMaletero = capacidadMaletero;
 	}
 	
+	public void abrirMaletero() {
+		System.out.println("El maletero de la ranchera se ha abierto.");
+	}
 }
