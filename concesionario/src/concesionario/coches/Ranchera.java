@@ -21,7 +21,7 @@ public class Ranchera extends Coche{
 		System.out.println("El maletero de la ranchera se ha abierto.");
 	}
 	
-	
+
 	
 	@Override
 	public String toString() {

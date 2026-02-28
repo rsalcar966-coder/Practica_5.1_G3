@@ -18,7 +18,7 @@ public class Quad extends Ciclomotor{
 	
 	@Override
 	public String toString() {
-		return String.format("Moto [marca= %s, modelo= %s, matricula= %s, cilindrada= %s, tamaño= %]", this.getMarca(), this.getModelo(), 
+		return String.format("Moto [marca= %s, modelo= %s, matricula= %s, cilindrada= %s, tamaño= %f]", this.getMarca(), this.getModelo(), 
 				this.getMatricula(), this.getCilindrada(), this.tamaño);
 	}
 
