@@ -26,7 +26,7 @@ public abstract class Furgoneta extends Vehiculo {
 
 	@Override
 	public String toString() {
-		return String.format("Coche [marca= %s, modelo= %s, matricula= %s, tipo= %s]", this.getMarca(), this.getModelo(), 
+		return String.format("Furgoneta [marca= %s, modelo= %s, matricula= %s, tipo= %s]", this.getMarca(), this.getModelo(), 
 				this.getMatricula(), this.tipo);
 	}
 

@@ -31,7 +31,7 @@ public class Camion extends Vehiculo{
 	
 	@Override
 	public String toString() {
-		return String.format("Coche [marca= %s, modelo= %s, matricula= %s, capacidadCarga= %f]", this.getMarca(), this.getModelo(), 
+		return String.format("Camion [marca= %s, modelo= %s, matricula= %s, capacidadCarga= %f]", this.getMarca(), this.getModelo(), 
 				this.getMatricula(), this.capacidadCarga);
 	}
 

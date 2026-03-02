@@ -30,7 +30,7 @@ public class Camper extends Furgoneta {
 	
 	@Override
 	public String toString() {
-		return String.format("Coche [marca= %s, modelo= %s, matricula= %s, descripcion= %s]", this.getMarca(), this.getModelo(), 
+		return String.format("Camper [marca= %s, modelo= %s, matricula= %s, descripcion= %s]", this.getMarca(), this.getModelo(), 
 				this.getMatricula(), this.descripcion);
 	}
 

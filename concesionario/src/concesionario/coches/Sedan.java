@@ -19,7 +19,7 @@ public class Sedan extends Coche{
 	
 	@Override
 	public String toString() {
-		return String.format("Ranchera [marca= %s, modelo= %s, matricula= %s, puertas= %d]", this.getMarca(), this.getModelo(), 
+		return String.format("Sedan [marca= %s, modelo= %s, matricula= %s, puertas= %d]", this.getMarca(), this.getModelo(), 
 				this.getMatricula(), this.puertas);
 	}
 
